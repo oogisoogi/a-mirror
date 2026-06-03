@@ -1,0 +1,13 @@
+{
+  "total": 110,
+  "current_step": 1,
+  "current_session_id": null,
+  "status": "running",
+  "started_at": "2026-04-24T06:03:20.119163",
+  "completed": [],
+  "clears": [],
+  "failed": [],
+  "sessions": {},
+  "rate_limit_state": null,
+  "last_updated": "2026-04-24T06:03:20.119165"
+}

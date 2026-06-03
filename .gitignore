@@ -20,3 +20,6 @@ translations/*
 
 # Setup Hook logs — runtime diagnostics (regenerated on each run)
 .claude/hooks/*.log
+
+# Distribution archives — not tracked
+*.zip
