@@ -58,7 +58,9 @@ GENOME_VERSION = (GENOME / "genome.version").read_text(encoding="utf-8").strip()
 # production-line tooling — children don't scaffold grandchildren, so the
 # scaffolder itself and its test are not shipped into a child's pinned bundle).
 _VENDOR_IGNORE = shutil.ignore_patterns(
-    "__pycache__", "*.pyc", ".DS_Store", "child_init.py", "test_child_init.py"
+    "__pycache__", "*.pyc", ".DS_Store",
+    "child_init.py", "test_child_init.py",
+    "genome_upgrade.py", "test_genome_upgrade.py",
 )
 
 # Agents that are genome CORE (auto-injected into every child). Skills likewise.

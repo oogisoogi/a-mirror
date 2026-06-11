@@ -1,1 +1,1 @@
-2e4b0c65113a46dfb6b219c03cd268af9fb6db64 2026-03-16 16:44:08 +0900 docs: 기술 개발 심층조사 PRD 프레임워크 추가 — Fork-Based Sessions 병렬 탐색 구조
+a942e045a98c5ce99d40d414b795c0eae3b7b448 2026-04-25 14:14:20 +0900 fix(prompt-runner): Rate-limit retry state-machine refactor (Fix #3) + manual prompt block updates

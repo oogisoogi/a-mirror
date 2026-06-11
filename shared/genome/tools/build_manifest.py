@@ -29,6 +29,8 @@ EXCLUDE_FILES = {
     "genome.manifest.json",
     "tools/child_init.py",
     "tools/test_child_init.py",
+    "tools/genome_upgrade.py",
+    "tools/test_genome_upgrade.py",
 }
 EXCLUDE_DIRS = {"__pycache__"}
 
