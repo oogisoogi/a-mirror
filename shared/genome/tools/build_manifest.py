@@ -31,6 +31,7 @@ EXCLUDE_FILES = {
     "tools/test_child_init.py",
     "tools/genome_upgrade.py",
     "tools/test_genome_upgrade.py",
+    "tools/test_upgrade_gate_e2e.py",
 }
 EXCLUDE_DIRS = {"__pycache__"}
 

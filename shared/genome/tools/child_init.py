@@ -61,6 +61,7 @@ _VENDOR_IGNORE = shutil.ignore_patterns(
     "__pycache__", "*.pyc", ".DS_Store",
     "child_init.py", "test_child_init.py",
     "genome_upgrade.py", "test_genome_upgrade.py",
+    "test_upgrade_gate_e2e.py",
 )
 
 # Agents that are genome CORE (auto-injected into every child). Skills likewise.
