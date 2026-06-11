@@ -45,7 +45,7 @@
     "skills/workflow-generator/references/state.yaml.example": "d115d26276319e7e093b6efd8d8fee3d44a474d5f7eed3475c0482f034f1d0f8",
     "skills/workflow-generator/references/workflow-template.md": "02263d27e6703b8ae09062f9c61694b5f4f31438e28a1dfd74a760fdb150b47e",
     "soul.base.md": "cda3009ecb0eb0b7bf43f5ca6469bf2456e01b82ebd760b144ccdf9198a59765",
-    "tools/build_manifest.py": "18b5f5c9230ef18008f5e9769cb776631993981eb9f3b830009b9e76359da151"
+    "tools/build_manifest.py": "042937f33522c6ec3faababa2353f632dbe8dad3ce4cf32a747f424d077e9758"
   },
   "genome_version": "0.1.0"
 }

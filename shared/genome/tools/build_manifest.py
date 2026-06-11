@@ -21,7 +21,15 @@ from pathlib import Path
 GENOME = Path(__file__).resolve().parent.parent  # shared/genome/
 MANIFEST = GENOME / "genome.manifest.json"
 VERSION_FILE = GENOME / "genome.version"
-EXCLUDE_FILES = {"genome.manifest.json"}
+# The scaffolder + its test are master-only production-line tooling (ADR-127 P3):
+# they operate ON the genome but are NOT part of the consumed genome surface a
+# child pins, so they are excluded from the integrity inventory (and from child
+# vendoring). This keeps the genome version/manifest unchanged by adding tooling.
+EXCLUDE_FILES = {
+    "genome.manifest.json",
+    "tools/child_init.py",
+    "tools/test_child_init.py",
+}
 EXCLUDE_DIRS = {"__pycache__"}
 
 
