@@ -11,6 +11,7 @@ Run: python3 contract/test_genome_contract.py   (exit 0 = pass, 1 = fail)
 """
 from __future__ import annotations
 
+import importlib.util
 import json
 import py_compile
 import re
@@ -82,6 +83,26 @@ if manifest_path.exists():
     check("manifest records genome_version", manifest.get("genome_version") == version)
     check("manifest tracks hook scripts", any(p.startswith("hooks/scripts/") for p in manifest.get("files", {})))
 
+
+# C7 — extension points (P2): genome.config defaults + loader functional
+check("genome.config.default.yaml present", (GENOME / "genome.config.default.yaml").exists())
+loader = HOOKS / "_genome_config.py"
+check("_genome_config.py present", loader.exists())
+if loader.exists():
+    spec = importlib.util.spec_from_file_location("_genome_config", loader)
+    try:
+        gc = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(gc)
+        check("_genome_config loads + translation default off", gc.translation_enabled() is False)
+    except Exception as exc:  # noqa: BLE001
+        check("_genome_config loads", False, f"{type(exc).__name__}: {exc}")
+
+# C8 — constitution base (P2): @import targets present for child overlay model
+for base_file in ("soul.base.md", "CLAUDE.base.md", "AGENTS.base.md"):
+    check(f"constitution base: {base_file}", (GENOME / base_file).exists())
+
+# C9 — hooks consumption template (P2): standard wiring the scaffolder injects
+check("settings.hooks.template.json present", (GENOME / "settings.hooks.template.json").exists())
 
 print()
 if _failures:

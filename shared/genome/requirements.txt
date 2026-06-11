@@ -1,0 +1,7 @@
+# Genome runtime dependencies (Tier A v0.1.0)
+#
+# Genome hooks are otherwise stdlib-only (so they run anywhere a child runs).
+# This is the single optional dependency:
+PyYAML>=6.0   # genome.config.yaml parsing in _genome_config.py.
+              # If absent, the loader uses built-in defaults and warns on
+              # stderr (child overrides skipped, never a hard fail).

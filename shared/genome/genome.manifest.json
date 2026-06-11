@@ -1,10 +1,14 @@
 {
   "files": {
+    "AGENTS.base.md": "8cc98908599f7f1c0cc6bc468f3b1e854faff1bc9b6e34a68499cbc75b41a069",
+    "CLAUDE.base.md": "7d4ad4048e6ab7655b05dbf2c6552685fad2bb607fa5a59c4b25b2feffd5cd33",
     "agents/fact-checker.md": "ea1f8faaa984c48277ebb4c14de485b14bc3310210e20505538ed65f86e447ed",
     "agents/reviewer.md": "f762fb95cbef3dcd0e594efa6a783cd24b782852eef9ad854a71e759ec1d5736",
-    "contract/test_genome_contract.py": "c33c04f85eb9090ca3db512d2459d7b17c06fae30cc140e54f5caa1b2f284327",
+    "contract/test_genome_contract.py": "38103ff335272dfcb682148deba82c19abe42c505b477e4549c4b82ff8481a5d",
+    "genome.config.default.yaml": "804a62a3c354db95df1245cdf1fbb9d51bc859fd840ec932c7271bf51edca5b7",
     "genome.version": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
     "hooks/scripts/_context_lib.py": "4ee7cf1c292e9cd767e0d1dfaf3dc08a3a62d593962c8d3dac1d98a7f0047809",
+    "hooks/scripts/_genome_config.py": "0065f7145d8299965b7e192fbc07a4299c296368b3350c3e9d3b7eb6c1ee915f",
     "hooks/scripts/_test_block_destructive.py": "e0c15aa6cf66900b130b0df25f49f4bd0ec53cc541211d2faa4498db2cbb357e",
     "hooks/scripts/_test_secret_filter.py": "75e041f5325e6aea8d76424e22772656904382d4ff06a7cdf99dc44518af5c6a",
     "hooks/scripts/_test_sensitive_file_guard.py": "cd38820bb861561fd5ade7347c8b1d6a82f900fb6ab9298306cda4be4c15c41e",
@@ -31,6 +35,8 @@
     "hooks/scripts/validate_translation.py": "eb229e6ea70104a6d50141ad72a5feae99b1caa9ff2a7394d67b8889742e05ae",
     "hooks/scripts/validate_verification.py": "2cae16d489ac6444546bd729b9828ccfb4ba05f2175cea5bd6a8fda14d44acb1",
     "hooks/scripts/validate_workflow.py": "1d379450ba043f9372e9121a5a53e432ef887c3240bca3e0da6b67689987349d",
+    "requirements.txt": "35088de9ef83d15565ae1d32809504d9a55d9af995fa241bf7121035f13094af",
+    "settings.hooks.template.json": "deaec8feaf61494ac9b862e9b1d85f7f6fccc5bf16024e2f40cf3c038322aa60",
     "skills/workflow-generator/SKILL.md": "eb928c3a5b1a8d9d00b71c5ebd213b1aa5f075a3fc5bcb928019def5de817241",
     "skills/workflow-generator/references/autopilot-decision-template.md": "47ed2736e7a18bab4bbb8fe47d49a420f6d3140bb76c28530eeb119384f6b64f",
     "skills/workflow-generator/references/claude-code-patterns.md": "3d229a8f648327181fcb704ae9feed8836e005f231640cbad4f6bf1600fe52fd",
@@ -38,6 +44,7 @@
     "skills/workflow-generator/references/document-analysis-guide.md": "9fcd8ea78803db45b06c135afe8adf7be7e320e116494a50f1f1824d3b036269",
     "skills/workflow-generator/references/state.yaml.example": "d115d26276319e7e093b6efd8d8fee3d44a474d5f7eed3475c0482f034f1d0f8",
     "skills/workflow-generator/references/workflow-template.md": "02263d27e6703b8ae09062f9c61694b5f4f31438e28a1dfd74a760fdb150b47e",
+    "soul.base.md": "cda3009ecb0eb0b7bf43f5ca6469bf2456e01b82ebd760b144ccdf9198a59765",
     "tools/build_manifest.py": "18b5f5c9230ef18008f5e9769cb776631993981eb9f3b830009b9e76359da151"
   },
   "genome_version": "0.1.0"
